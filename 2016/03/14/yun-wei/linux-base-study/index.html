@@ -1,0 +1,1215 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Linux_基本学习, 孙昊的博客">
+    <meta name="description" content="
+快捷操作：
+切换控制台，由图形转换到控制台模式：ctrl+alt+f1(同时按下3秒钟不要马上松开)。由控制台转向图形模式是：alt+f7 
+命令行—&amp;gt;图形界面 startx
+修改默认的语言项（在控制台下）：vi /etc/sysc">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Linux_基本学习 | 孙昊的博客</title>
+    <link rel="icon" type="image/png" href="/medias/coder.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+</head>
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <a href="/" class="waves-effect waves-light">
+                        
+                        <img src="/medias/logo.png" class="logo-img hide-on-small-only">
+                        
+                        <span class="logo-span">孙昊的博客</span>
+                    </a>
+                </div>
+                
+
+<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>
+                首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>
+                标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>
+                分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>
+                归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>
+                关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/1900/01/01/ge-ren-jian-li/" class="waves-effect waves-light">
+            
+            <i class="fa fa-file"></i>
+            
+            <span>
+                简历</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>
+                友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a id="toggleSearch" class="waves-effect waves-light">
+            <i id="searchIcon" class="mdi-action-search"></i>
+        </a>
+    </li>
+
+</ul>
+
+<div class="side-nav" id="mobile-nav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">
+            孙昊的博客
+        </div>
+        <div class="logo-desc">
+            
+            Talk is cheap,show me the code.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/1900/01/01/ge-ren-jian-li/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-file"></i>
+                
+                简历
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="https://github.com/lodsve/lodsve-framework" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>
+                Fork Me
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="social-link">
+        <a href="https://github.com/sunhao-java" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="mailto:sunhao0550@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 867885140" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
+
+<a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <i class="fa fa-rss"></i>
+</a>
+
+    </div>
+</div>
+            </div>
+        </div>
+
+        
+        <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/lodsve/lodsve-framework" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewbox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+</a>
+        
+    </nav>
+</header>
+
+
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        Linux_基本学习
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1,
+    #articleContent h2,
+    #articleContent h3,
+    #articleContent h4,
+    #articleContent h5,
+    #articleContent h6 {
+        padding-top: 76px;
+        margin-top: -76px;
+    }
+
+    #articleContent h1 {
+        line-height: 3.5rem;
+    }
+
+    #articleContent h2 {
+        line-height: 3.2rem;
+    }
+
+    #articleContent h3 {
+        line-height: 2.8rem;
+    }
+
+    #articleContent h4 {
+        line-height: 2.5rem;
+    }
+
+    #articleContent h5 {
+        line-height: 2.2rem;
+    }
+
+    #articleContent h6 {
+        line-height: 1.9rem;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            
+            <div class="article-tag">
+                
+                <a href="/tags/Linux/" target="_blank">
+                    <span class="chip bg-color">Linux</span>
+                </a>
+                
+                <a href="/tags/学习/" target="_blank">
+                    <span class="chip bg-color">学习</span>
+                </a>
+                
+            </div>
+            
+            <div class="post-info">
+                
+                <span class="post-cate">
+                <!--<span class="post-cate" style="margin-right: 0px">-->
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                    
+                    <a href="/categories/运维/" class="post-category" target="_blank">
+                        运维
+                    </a>
+                    
+                </span>
+                
+
+                <span class="post-date">
+                    <i class="fa fa-clock-o fa-fw"></i>2016-03-14
+                </span>
+				
+				
+                    <span id="busuanzi_container_page_pv" class="post-read">
+                    <i class="fa fa-eye fa-fw"></i>阅读 <span id="busuanzi_value_page_pv"></span>
+				
+            </span></div>
+        </div>
+        <hr>
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <ol>
+<li>快捷操作：<ul>
+<li>切换控制台，由图形转换到控制台模式：ctrl+alt+f1(同时按下3秒钟不要马上松开)。由控制台转向图形模式是：alt+f7 </li>
+<li>命令行—&gt;图形界面 startx</li>
+<li>修改默认的语言项（在控制台下）：vi /etc/sysconfig/i18n中的LANG=zh_CN.GB18030(注意大小写，然后重启系统即可) </li>
+<li>修改默认启动级别：vi /etc/inittab 修改id:3:initdefault中的3为想要的级别</li>
+<li>翻页：shift+pageup/pagedown</li>
+<li>关机：shutdown</li>
+<li>重启：reboot</li>
+</ul>
+</li>
+</ol>
+<a id="more"></a>
+<ol start="2">
+<li><p>我的Linux配置</p>
+<pre><code> 用户名root        密码sunhao
+ 用户名sunhao    密码1314520
+ IP地址 192.168.220.129    
+ 广播地址 192.168.220.255    
+ 子网掩码255.255.255.0
+</code></pre></li>
+<li><p>Linux中的命令：</p>
+<ul>
+<li>pwd    查看当前路径名</li>
+<li>whoami    查看当前登录的用户名</li>
+<li>ls    列出当前路径下所有的文件和目录<ul>
+<li>ls -l     按照一定格式(实验)<br><pre><code>   以d开头的都是目录&lt;br/&gt;
+   以-开头的都是文件&lt;br/&gt;
+   以l开头的都是链接
+</code></pre></li>
+<li>ls -R    按照树状结构列出目录</li>
+</ul>
+</li>
+<li>cd    进入一个目录<ul>
+<li>cd ..    返回上一层目录</li>
+</ul>
+</li>
+<li>mkdir     创建一个目录</li>
+<li>touch     创建一个文件</li>
+<li>rmdir     删除一个目录(只能是空目录)<ul>
+<li>rm -rf 目录    强制删除一个目录(不管是否为空)</li>
+<li>rm -r 目录    删除一个非空的目录(会询问是否删除此目录的子目录)</li>
+</ul>
+</li>
+<li>mount     挂载<ul>
+<li>mount /dev/cdrom /mnt/cdr    把dev下的cdrom(光驱)挂载在mnt下的cdr目录下</li>
+<li>umount (设备名/挂载点名)    取消挂载(注意要推出访问设备)</li>
+</ul>
+</li>
+<li>cp    拷贝<ul>
+<li>cp 1 2    把文件名为1的文件拷贝一份为文件2</li>
+<li>cp    -r    s1 s2    把目录s1复制到目录s2下</li>
+</ul>
+</li>
+<li>mv    移动文件<ul>
+<li>mv 1 s1    把文件1移动到s1目录下</li>
+<li>mv -r    同cp -r</li>
+<li>mv sunhaoInfo sunhao    把名为sunhaoInfo的文件夹改名为sunhao</li>
+</ul>
+</li>
+<li>clear    清屏</li>
+<li>vi    (文本编辑器)往创建好的文件中写入<ul>
+<li>vi 3.txt    如何有则直接写入，如果没有则创建<ul>
+<li>a(回车)    开始编辑模式</li>
+<li>ESC    退出编辑模式</li>
+<li>:    返回命令行模式</li>
+<li>w    存盘</li>
+<li>q    退出</li>
+<li>qw    存盘退出</li>
+<li>q!    不存盘退出</li>
+<li>dd    删除一行</li>
+<li>dw    删除一个单词</li>
+<li>o    往下插入一行</li>
+<li>O(大写)    往上插入一行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>more    查看文件内容<ul>
+<li>more 3.txt    查看文件的内容</li>
+</ul>
+</li>
+<li>cat        同上(顺序显示)</li>
+<li>tac        同上(逆序显示)</li>
+<li>head    同上<ul>
+<li>head -n 3.txt    显示3.txt的前n行内容</li>
+</ul>
+</li>
+<li>tail    同上<ul>
+<li>tail -n 3.txt    显示3.txt的后n行内容</li>
+</ul>
+</li>
+<li>find    查找文件在哪里<ul>
+<li>find /sunhao -name <em>.txt    从/sunhao路径下开始查找符合</em>.txt的文件(查文档)</li>
+</ul>
+</li>
+<li>grep    查找字符<ul>
+<li>grep sunhao 1.txt    查找1.txt中字符串sunhao所在的一行</li>
+</ul>
+</li>
+<li>whereis        查看命令在哪里<ul>
+<li>whereis ls    查看ls命令所在的位置</li>
+</ul>
+</li>
+<li>echo    查看环境变量<ul>
+<li>echo $PATH    查看Linux下的PATH环境变量值(大写)</li>
+</ul>
+</li>
+<li>ln        链接命令符<ul>
+<li>ln 3.txt 4    创建3.txt的一个链接4(硬链接，复制了一个文件并在文件中建立一个链接)</li>
+<li>ln -s 3.txt 5    同上，但是软链接(软链接、符号链接，相当于Windows中的快捷方式)</li>
+<li>区别：删掉源文件后硬链接依然存在，而软链接就失去了链接</li>
+</ul>
+</li>
+<li>groupadd    添加组<ul>
+<li>groupadd testgroup    添加组testgroup</li>
+</ul>
+</li>
+<li>useradd/adduser        添加用户(如果没有指定组就创建一个跟用户名相同的组)<ul>
+<li>useradd testuser    添加testuser用户</li>
+<li>useradd testuser -g testgroup    添加用户testuser到testgroup用户组</li>
+</ul>
+</li>
+<li><p>passwd    为用户指定密码</p>
+<ul>
+<li><p>passwd testuser    为testuser添加密码</p>
+<pre><code>  (当以普通用户身份登录的时候，直接输入passwd
+      1、输入当前密码
+      2、输入新密码
+      3、再次输入新密码
+  )
+</code></pre></li>
+</ul>
+</li>
+<li>groupdel    删除组(没有用户)<ul>
+<li>groupdel testgroup    删除组testgroup</li>
+</ul>
+</li>
+<li>userdel        删除用户(注意要删除用户的主目录，home下)<ul>
+<li>userdel test    删除用户test</li>
+</ul>
+</li>
+<li>usermod        为用户更改组<ul>
+<li>usermod -g testgroup testuser    把用户testuser的组改成testgroup</li>
+</ul>
+</li>
+<li>su            切换用户</li>
+</ul>
+</li>
+<li><p>Linux中有四种权限：<code>rwx-    ---&gt; read write execute none(读、写、执行、无)</code></p>
+<pre><code> 权限：-rwxr-xr-x  ---&gt; 分成四组(1、表示文件类型；2、文件所有者的权限；3、文件所有者所在组的人的权限；4、其他人权限)
+ chmod    修改权限(+:添加权限 -:取消权限)(按照rwx顺序排列)
+ chmod +x 4    给4文件添加权限x(全部的人)
+ chmod u+x 4        给当前用户添加4文件的x权限
+ chmod g+x 4        给文件所有者所在组的人添加文件4的权限x
+ chmod o+x 4        给所有不在同组的人添加文件4的权限x
+ chmod 777    特殊的方式修改权限
+         9位权限分成3组(所有者，同组人，其他人)
+         每一组用3位二进制表示，即752---&gt;111101010(rwxr-x-w-)
+ chown    修改文件所有者
+ chown sunhao 1.txt    修改1.txt的所有者为sunhao
+</code></pre></li>
+<li><p>管道    把命令以|隔开，表示依次执行</p>
+<pre><code> ls -l | grep &quot;^d&quot;    先执行列出目录，然后执行查找以d开头的行(即只列出目录)
+ ls -l | grep &quot;^d&quot; | wc -l     输出目录的个数
+ wall    警告所有登录的人
+ wall date    所有登录的用户都会显示all
+ wall ・date・        警告所有登录的人执行date之后的结果(显示当前系统日期时间)
+</code></pre></li>
+<li><p>重定向    把命令执行的结果写在一个文件中(输出)</p>
+<pre><code> ls &gt; 2.txt    把ls执行结果写在2.txt中(替换)
+ ls &gt;&gt; 2.txt        把执行结果写在2.txt中文本的最后(不替换)
+ lsss 2&gt; 2.txt    把执行命令的错误信息写入到2.txt中    
+</code></pre></li>
+<li><p>重定向    把文本中的信息取出然后输入</p>
+<pre><code> wall &lt; 2.txt    把2.txt中的文本取出警告所有登录的人
+</code></pre></li>
+<li><p>Linux FTP Service</p>
+<pre><code> 启动：service vsftpd start    d表示后台启动
+ 停止：service vsftpd stop
+ 重启：service vsftpd restart
+ 登录：ftp localhost
+ 查IP：ifconfig    查询Linux的IP地址
+</code></pre></li>
+<li><p>关闭Linux防火墙    </p>
+<pre><code> service iptables stop
+</code></pre></li>
+<li><p>允许匿名登录</p>
+<pre><code>cmd连接Linux的FTP： ftp 192.168.94.129
+匿名用户名：        anonymous
+密码：                空
+</code></pre></li>
+<li>Linux中FTP配置文件：/etc/vsftpd/vsftpd.conf</li>
+<li><p>Linux中允许root用户登录FTP(记得要重启FTP service)：</p>
+<pre><code>修改文件/etc/vsftpd.user_list，把root给注释掉
+修改文件/etc/vsftpd.ftpusers,把root给注释掉
+</code></pre></li>
+<li><p>Linux中设置vsftp开机自启动：</p>
+<pre><code>方法1：vi /ect/rc.local加入以下一句:/user/local/bin/vsftpd &amp;(表示以后台程序启动)
+方法2：chkconfig vsftpd on(查ckconfig的用法)
+</code></pre></li>
+<li><p>ssh        远程登录</p>
+<pre><code>启动：service sshd start(基本与vsftpd相同)
+</code></pre></li>
+<li><p>Linux下安装tomcat</p>
+<ol>
+<li><p>解压文件：先gzip -d 文件名</p>
+<pre><code>   再tar -xvf 上面解压后的文件名
+   tar -zxvf ??.tar.gz
+</code></pre></li>
+<li>需要指定JAVA_HOME环境变量(要执行export JAVA_HOME,别人才能使用)</li>
+<li><p>ps -ef        查看所有的进程(重要参数是id)</p>
+<pre><code> ps -ef tomcat    查看tomcat进程
+</code></pre></li>
+<li>关闭tomcat进程        <code>kill tomcat进程id</code></li>
+<li><p>设置tomcat开机启动</p>
+<pre><code> vi /etc/rc.local
+ 加上JAVA_HOME=/usr/java/jdk1.6.0_25
+ export JAVA_HOME
+ /sunhao/tomcat/bin/startup.sh
+</code></pre></li>
+</ol>
+</li>
+<li><p>rpm </p>
+<ul>
+<li><p>rpm-qa    查看装了哪些软件</p>
+<pre><code>  rpm -qa | grep jdk        查看有没有装jdk
+</code></pre></li>
+<li><p>rpm    -e    卸载(查强制卸载)</p>
+<pre><code>  rpm -e 安装包名
+</code></pre></li>
+<li><p>rpm -ivh    安装</p>
+<pre><code>  rpm -ivh 文件名(rpm文件)
+</code></pre></li>
+</ul>
+</li>
+<li><p>设置全局环境变量</p>
+<pre><code>/etc/profile文件    vi /etc/profile    最后一行加上JAVA_HOME=jdk目录
+</code></pre></li>
+<li><p>Linux下MySQL    用户名：root    密码：1314520</p>
+<pre><code>设置密码    mysqladmin -uroot password &#39;1314520&#39;
+</code></pre></li>
+<li><p>要是发现我们的应用和数据库服务器系统时间不对可以使用这几个命令修改：</p>
+<ul>
+<li><p>先设置日期</p>
+<pre><code>  date -s 20080103
+</code></pre></li>
+<li><p>设置时间</p>
+<pre><code>  date -s 18:24:00
+</code></pre></li>
+<li><p>如果要同时更改BIOS时间</p>
+<pre><code>  再执行clock -w
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>export PATH=/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11R6/bin</p>
+</blockquote>
+
+            </div>
+            <hr>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff;
+        background-color: #22AB38;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff;
+        background-color: #019FE8;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs">
+                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
+                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                    </ul>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#reward .reward-link').on('click', function () {
+            $('#rewardModal').openModal();
+        });
+
+        $('#rewardModal .close').on('click', function () {
+            $('#rewardModal').closeModal();
+        });
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            <div class="reprint">
+                <p>
+                    <span class="reprint-tip">转载请注明: </span>
+                    <a href="https://www.crazy-coder.cn" class="b-link-green">孙昊的博客</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/2016/03/14/yun-wei/linux-base-study/" class="b-link-green">Linux_基本学习</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '591296edc3a83760ee5a',
+        clientSecret: 'a5fe7aaf6f365ec9a9a4cbf493e01d1a2528ba05',
+        repo: 'blog_hexo',
+        owner: 'sunhao-java',
+        admin: "sunhao-java",
+        id: '2016-03-14T00-00-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="card">
+                <a href="/2016/03/14/shu-ju-ku/linux-access-mysql-remote/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Linux_远程访问Linux下的mysql">
+                        
+                        <span class="card-title">Linux_远程访问Linux下的mysql</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">
+首先尝试在mysql内赋予该账户从远程IP访问的权限。
+ mysql -u root -p
+ use mysql;
+ 登陆以后运行以下命令，给予远程访问客户端权限..
+ grant all on *.* to &#39;ray7hu&#3</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2016-03-14
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/数据库/" class="post-category" target="_blank">
+                                    数据库
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/database/" target="_blank">
+                        <span class="chip bg-color">database</span>
+                    </a>
+                    
+                    <a href="/tags/mysql/" target="_blank">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">下一篇</div>
+            <div class="card">
+                <a href="/2016/03/14/yun-wei/linux-hardware/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Linux_检查和收集Linux硬件信息的7个命令">
+                        
+                        <span class="card-title">Linux_检查和收集Linux硬件信息的7个命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">
+lscpu用于查询CPU信息
+
+lshw显示硬件信息表
+
+这个命令应用普遍，它可通过个人需求而列出多种不同的硬件参数：CPU、内存、硬盘、USB控制器、lshw卡片等等，本质上就是从/proc目录不同文件中中提取对应的硬件信息。
+
+ 按照</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2016-03-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/运维/" class="post-category" target="_blank">
+                                    运维
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/检查/" target="_blank">
+                        <span class="chip bg-color">检查</span>
+                    </a>
+                    
+                    <a href="/tags/收集/" target="_blank">
+                        <span class="chip bg-color">收集</span>
+                    </a>
+                    
+                    <a href="/tags/硬件/" target="_blank">
+                        <span class="chip bg-color">硬件</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 孙昊的博客<br />'
+            + '作者: 孙昊<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title">目录</div>
+            <div id="toc-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy; 2019 孙昊
+            
+			
+                <br>
+                <span id="busuanzi_container_site_pv">
+                    本站总访问量 <span id="busuanzi_value_site_pv" style="color: #fff;"></span> 次,&nbsp;
+                </span>
+				<span id="busuanzi_container_site_uv">
+                    访客数 <span id="busuanzi_value_site_uv" style="color: #fff;"></span> 人.
+                </span>
+			
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/sunhao-java" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="mailto:sunhao0550@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 867885140" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
+
+<a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <i class="fa fa-rss"></i>
+</a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title">搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input" autofocus>
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/js/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75096622-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-75096622-1');
+</script>
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

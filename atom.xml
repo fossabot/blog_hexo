@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>孙昊的博客</title>
+  
+  <subtitle>Crazy Coder</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.crazy-coder.cn/"/>
+  <updated>2019-05-29T11:29:26.231Z</updated>
+  <id>https://www.crazy-coder.cn/</id>
+  
+  <author>
+    <name>孙昊</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git中的后悔药</title>
+    <link href="https://www.crazy-coder.cn/2019/01/27/gong-ju/git-zhong-de-hou-hui-yao/"/>
+    <id>https://www.crazy-coder.cn/2019/01/27/gong-ju/git-zhong-de-hou-hui-yao/</id>
+    <published>2019-01-27T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;当git提交上去一些错误代码或者一些敏感信息时，这时候你需要回滚，但是还是能在git的日志找到蛛丝马迹，这时候我们就需要后悔药了！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="git" scheme="https://www.crazy-coder.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos下安装teamviewer</title>
+    <link href="https://www.crazy-coder.cn/2019/01/23/gong-ju/centos-xia-an-zhuang-teamviewer/"/>
+    <id>https://www.crazy-coder.cn/2019/01/23/gong-ju/centos-xia-an-zhuang-teamviewer/</id>
+    <published>2019-01-23T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Linux" scheme="https://www.crazy-coder.cn/tags/Linux/"/>
+    
+      <category term="Teamviewer" scheme="https://www.crazy-coder.cn/tags/Teamviewer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos下搭建梯子</title>
+    <link href="https://www.crazy-coder.cn/2019/01/23/gong-ju/centos-xia-da-jian-ti-zi/"/>
+    <id>https://www.crazy-coder.cn/2019/01/23/gong-ju/centos-xia-da-jian-ti-zi/</id>
+    <published>2019-01-23T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于众所周知的一些原因，在我天朝内(JU)部(YU)网(WANG)络并不能访问&lt;code&gt;谷哥&lt;/code&gt;，而&lt;code&gt;度娘&lt;/code&gt;的不务正业，让我们撸码的人搜索感觉到很蛋疼。所以为了能用上&lt;code&gt;谷哥&lt;/code&gt;，还能看看墙外的世界，这时候就需要一把梯子了，这里只介绍如果去搭建梯子，至于如何去造梯子，以后再说吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Centos" scheme="https://www.crazy-coder.cn/tags/Centos/"/>
+    
+      <category term="梯子" scheme="https://www.crazy-coder.cn/tags/%E6%A2%AF%E5%AD%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Docker安装YApi</title>
+    <link href="https://www.crazy-coder.cn/2019/01/23/gong-ju/shi-yong-docker-an-zhuang-yapi/"/>
+    <id>https://www.crazy-coder.cn/2019/01/23/gong-ju/shi-yong-docker-an-zhuang-yapi/</id>
+    <published>2019-01-23T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;code&gt;YApi&lt;/code&gt;是&lt;code&gt;去哪儿网大前端技术中心（YMFE）&lt;/code&gt;开发并开源的一款&lt;code&gt;高效、易用、功能强大的API管理平台&lt;/code&gt;。支持&lt;code&gt;项目管理&lt;/code&gt;、&lt;code&gt;接口管理&lt;/code&gt;、&lt;code&gt;MockS
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Docker" scheme="https://www.crazy-coder.cn/tags/Docker/"/>
+    
+      <category term="yapi" scheme="https://www.crazy-coder.cn/tags/yapi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建Harbor企业级docker仓库</title>
+    <link href="https://www.crazy-coder.cn/2019/01/18/yun-wei/da-jian-harbor-qi-ye-ji-docker-cang-ku/"/>
+    <id>https://www.crazy-coder.cn/2019/01/18/yun-wei/da-jian-harbor-qi-ye-ji-docker-cang-ku/</id>
+    <published>2019-01-18T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;下载harbor安装文件&quot;&gt;&lt;a href=&quot;#下载harbor安装文件&quot; class=&quot;headerlink&quot; title=&quot;下载harbor安装文件&quot;&gt;&lt;/a&gt;下载harbor安装文件&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://storage.googleapis.com/harbor-releases/release-1.7.0/harbor-online-installer-v1.7.1.tgz&quot; title=&quot;harbor-online-installer-v1.7.1.tgz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;harbor-online-installer-v1.7.1.tgz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;放置在&lt;code&gt;/opt&lt;/code&gt;目录下&lt;/li&gt;
+&lt;li&gt;解压&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd /opt/harbor&lt;/code&gt;
+    
+    </summary>
+    
+      <category term="运维" scheme="https://www.crazy-coder.cn/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+      <category term="Docker" scheme="https://www.crazy-coder.cn/tags/Docker/"/>
+    
+      <category term="Harbor" scheme="https://www.crazy-coder.cn/tags/Harbor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装kubernetes</title>
+    <link href="https://www.crazy-coder.cn/2019/01/10/yun-wei/an-zhuang-kubernetes/"/>
+    <id>https://www.crazy-coder.cn/2019/01/10/yun-wei/an-zhuang-kubernetes/</id>
+    <published>2019-01-10T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;安装好3台虚拟机&lt;ol&gt;
+&lt;li&gt;10.20.2.194[k8s-master]&lt;/li&gt;
+&lt;li&gt;10.20.2.44[k8s-node1]&lt;/li&gt;
+&lt;li&gt;10.20.2.37[k8s-node2]
+    
+    </summary>
+    
+      <category term="运维" scheme="https://www.crazy-coder.cn/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+      <category term="Docker" scheme="https://www.crazy-coder.cn/tags/Docker/"/>
+    
+      <category term="kubernetes" scheme="https://www.crazy-coder.cn/tags/kubernetes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过Travis来自动构建博客</title>
+    <link href="https://www.crazy-coder.cn/2018/12/13/gong-ju/build-blog-on-travis/"/>
+    <id>https://www.crazy-coder.cn/2018/12/13/gong-ju/build-blog-on-travis/</id>
+    <published>2018-12-13T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文基于熟练搭建基于github+hexo搭建博客的基础上，并且对github简单操作，并且会使用通过ssh的方式提交代码到github上。&lt;br&gt;PS：如果你只有Windows电脑，那请放弃！或者选择使用Linux、macOS系统!&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="站务" scheme="https://www.crazy-coder.cn/tags/%E7%AB%99%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring-cloud各组件</title>
+    <link href="https://www.crazy-coder.cn/2018/09/04/hou-duan/spring-cloud-components/"/>
+    <id>https://www.crazy-coder.cn/2018/09/04/hou-duan/spring-cloud-components/</id>
+    <published>2018-09-04T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;spring-cloud各组件&quot;&gt;&lt;a href=&quot;#spring-cloud各组件&quot; class=&quot;headerlink&quot; title=&quot;spring-cloud各组件&quot;&gt;&lt;/a&gt;spring-cloud各组件&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="后端" scheme="https://www.crazy-coder.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="spring" scheme="https://www.crazy-coder.cn/tags/spring/"/>
+    
+      <category term="spring-cloud" scheme="https://www.crazy-coder.cn/tags/spring-cloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>keepalived + nginx 实现高可用集群方案</title>
+    <link href="https://www.crazy-coder.cn/2017/06/05/zhong-jian-jian/nginx-keepalived-cluster/"/>
+    <id>https://www.crazy-coder.cn/2017/06/05/zhong-jian-jian/nginx-keepalived-cluster/</id>
+    <published>2017-06-05T20:43:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;两台虚拟机如：&lt;ul&gt;
+&lt;li&gt;10.211.55.8&lt;/li&gt;
+&lt;li&gt;10.211.55.10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;准备安装文件&lt;ul&gt;
+&lt;li&gt;nginx-1.13.1.tar.gz&lt;/li&gt;
+&lt;li&gt;pcre-8.36.zip&lt;/li&gt;
+&lt;li&gt;keepalived-1.2.22.tar.gz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="nginx" scheme="https://www.crazy-coder.cn/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FastDFS之集群部署</title>
+    <link href="https://www.crazy-coder.cn/2017/06/05/zhong-jian-jian/install-fastdfs-cluster/"/>
+    <id>https://www.crazy-coder.cn/2017/06/05/zhong-jian-jian/install-fastdfs-cluster/</id>
+    <published>2017-06-05T15:24:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;环境准备&quot;&gt;&lt;a href=&quot;#环境准备&quot; class=&quot;headerlink&quot; title=&quot;环境准备&quot;&gt;&lt;/a&gt;环境准备&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;tracker：192.168.20.116&lt;/li&gt;
+&lt;li&gt;storage：&lt;ul&gt;
+&lt;li&gt;group1：192.168.20.117&lt;/li&gt;
+&lt;li&gt;group2：192.168.20.118&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;准备好安装文件&lt;ul&gt;
+&lt;li&gt;fastdfs-5.05.zip&lt;/li&gt;
+&lt;li&gt;fastdfs-nginx-module.zip&lt;/li&gt;
+&lt;li&gt;libfastcommon-1.0.7.zip&lt;/li&gt;
+&lt;li&gt;nginx-1.8.1.tar.gz&lt;/li&gt;
+&lt;li&gt;ngx_cache_purge-2.3.tar.gz&lt;/li&gt;
+&lt;li&gt;pcre-8.36.zip&lt;/li&gt;
+&lt;li&gt;zlib-1.2.8.tar.gz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="FastDFS" scheme="https://www.crazy-coder.cn/tags/FastDFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装配置FastDFS</title>
+    <link href="https://www.crazy-coder.cn/2017/05/26/zhong-jian-jian/fastdfs-install/"/>
+    <id>https://www.crazy-coder.cn/2017/05/26/zhong-jian-jian/fastdfs-install/</id>
+    <published>2017-05-26T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在新的服务器上安装了FastDFS_v5.05，相比较FastDFSV3.02还是有很多变化，现将安装配置过程记录下，供大家参考，出于安全考虑，其中涉及到IP地址的地方，随意用了一个IP202.98.27.31，在访问量不大情况下，将tracker和storage都部署在同一台服务器上，后期根据业务需要进行扩展：&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="FastDFS" scheme="https://www.crazy-coder.cn/tags/FastDFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mongodb高可用集群搭建</title>
+    <link href="https://www.crazy-coder.cn/2017/05/26/zhong-jian-jian/mongodb-high-availability-cluster/"/>
+    <id>https://www.crazy-coder.cn/2017/05/26/zhong-jian-jian/mongodb-high-availability-cluster/</id>
+    <published>2017-05-26T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;最近公司项目要求Mongodb集群且高可用，在查询了一系列文章，再结合项目实际情况，所以采用了这一套高可用集群方案&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="Mongodb" scheme="https://www.crazy-coder.cn/tags/Mongodb/"/>
+    
+      <category term="database" scheme="https://www.crazy-coder.cn/tags/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis高可用集群搭建</title>
+    <link href="https://www.crazy-coder.cn/2017/05/24/zhong-jian-jian/redis-high-availability-cluster/"/>
+    <id>https://www.crazy-coder.cn/2017/05/24/zhong-jian-jian/redis-high-availability-cluster/</id>
+    <published>2017-05-24T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;最近公司项目要求Redis集群且高可用，在查询了一系列文章，再结合项目实际情况，所以采用了这一套高可用集群方案&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="Redis" scheme="https://www.crazy-coder.cn/tags/Redis/"/>
+    
+      <category term="database" scheme="https://www.crazy-coder.cn/tags/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过Atlas实现MySQL读写分离</title>
+    <link href="https://www.crazy-coder.cn/2017/05/23/shu-ju-ku/atlas-mysql/"/>
+    <id>https://www.crazy-coder.cn/2017/05/23/shu-ju-ku/atlas-mysql/</id>
+    <published>2017-05-23T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;最近公司项目要求MySQL高可用，加上以前公司听过QiHoo360的Atlas，所以就尝试搭建了一个MySQL读写分离，并且高可用的。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://www.crazy-coder.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="database" scheme="https://www.crazy-coder.cn/tags/database/"/>
+    
+      <category term="MySQL" scheme="https://www.crazy-coder.cn/tags/MySQL/"/>
+    
+      <category term="Atlas" scheme="https://www.crazy-coder.cn/tags/Atlas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>周杰伦Jay所有专辑</title>
+    <link href="https://www.crazy-coder.cn/2016/08/30/qi-ta/jay/"/>
+    <id>https://www.crazy-coder.cn/2016/08/30/qi-ta/jay/</id>
+    <published>2016-08-30T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Jay-2000&quot;&gt;&lt;a href=&quot;#Jay-2000&quot; class=&quot;headerlink&quot; title=&quot;Jay(2000)&quot;&gt;&lt;/a&gt;Jay(2000)&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;专辑简介：&lt;/p&gt;
+&lt;p&gt; 《Jay》是周杰伦jay的第一部专辑，由周杰伦制作、作曲，方文山、徐若瑄等人作词，收录了10首歌曲，2000年11月7日发行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;歌曲列表&lt;ul&gt;
+&lt;li&gt;可爱女人&lt;/li&gt;
+&lt;li&gt;完美主义&lt;/li&gt;
+&lt;li&gt;星晴&lt;/li&gt;
+&lt;li&gt;娘子&lt;/li&gt;
+&lt;li&gt;斗牛&lt;/li&gt;
+&lt;li&gt;黑色幽默&lt;/li&gt;
+&lt;li&gt;伊斯坦堡&lt;/li&gt;
+&lt;li&gt;印地安老斑鸠&lt;/li&gt;
+&lt;li&gt;龙卷风&lt;/li&gt;
+&lt;li&gt;反方向的钟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="其他" scheme="https://www.crazy-coder.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="生活随笔" scheme="https://www.crazy-coder.cn/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建过程</title>
+    <link href="https://www.crazy-coder.cn/2016/03/21/gong-ju/blog-create/"/>
+    <id>https://www.crazy-coder.cn/2016/03/21/gong-ju/blog-create/</id>
+    <published>2016-03-21T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;建站过程&quot;&gt;&lt;a href=&quot;#建站过程&quot; class=&quot;headerlink&quot; title=&quot;建站过程&quot;&gt;&lt;/a&gt;建站过程&lt;/h1&gt;&lt;h2 id=&quot;选型&quot;&gt;&lt;a href=&quot;#选型&quot; class=&quot;headerlink&quot; title=&quot;选型&quot;&gt;&lt;/a&gt;选型&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;本人积累了4年左右的技术文档&lt;/li&gt;
+&lt;li&gt;苦于无处管理&lt;/li&gt;
+&lt;li&gt;原先想在&lt;a href=&quot;http://www.oschina.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;开源中国&lt;/a&gt;上创建博客写写文章,并且也付之行动&lt;/li&gt;
+&lt;li&gt;后来发现将这么多文档转移到开源中国上得工作量实在太大了&lt;/li&gt;
+&lt;li&gt;N久之前想学习Node.JS&lt;/li&gt;
+&lt;li&gt;在同事的推荐下,知道了Hexo这个东西&lt;/li&gt;
+&lt;li&gt;而且有很多theme可以使用,&lt;a href=&quot;http://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;有哪些好看的 Hexo 主题? - GitHub - 知乎&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;而且所有的文档都是用markdown去写的&lt;/li&gt;
+&lt;li&gt;markdown的语法很简单,很容易入门上手.&lt;a href=&quot;http://www.appinn.com/markdown/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Markdown 语法说明(简体中文版)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遂,选之.&lt;/p&gt;
+&lt;p&gt;PS: 文本文档转markdown的代价也大,但是值得!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.crazy-coder.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="站务" scheme="https://www.crazy-coder.cn/tags/%E7%AB%99%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux_Ubuntu下安装配置Svn+Apache服务器</title>
+    <link href="https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/linux-ubuntu-install-svn-apache/"/>
+    <id>https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/linux-ubuntu-install-svn-apache/</id>
+    <published>2016-03-18T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装-Subversion&quot;&gt;&lt;a href=&quot;#安装-Subversion&quot; class=&quot;headerlink&quot; title=&quot;安装 Subversion&quot;&gt;&lt;/a&gt;安装 Subversion&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装 Subversion&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get install subversion
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="Linux" scheme="https://www.crazy-coder.cn/tags/Linux/"/>
+    
+      <category term="Ubuntu" scheme="https://www.crazy-coder.cn/tags/Ubuntu/"/>
+    
+      <category term="Svn" scheme="https://www.crazy-coder.cn/tags/Svn/"/>
+    
+      <category term="Apache" scheme="https://www.crazy-coder.cn/tags/Apache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB_安装</title>
+    <link href="https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/mongodb-install/"/>
+    <id>https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/mongodb-install/</id>
+    <published>2016-03-18T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;已管理员身份运行命令行&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入命令&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="MongoDB" scheme="https://www.crazy-coder.cn/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx过滤url实现前台js的配置问题</title>
+    <link href="https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/nginx-url/"/>
+    <id>https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/nginx-url/</id>
+    <published>2016-03-18T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;我们在开发的过程中,可能需要一些配置,这些配置可能就是仅仅为了开发的方便,比方说,订单过期时间,生产环境需要半小时失效,但是真正开发时,我不可能等上个半小时,所以这个时间这个失效时间我们会写在配置文件中,这样开发环境和生产环境各一套配置,来回切换很方便的.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="frontend" scheme="https://www.crazy-coder.cn/tags/frontend/"/>
+    
+      <category term="nginx" scheme="https://www.crazy-coder.cn/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Solr删除数据的几种方式</title>
+    <link href="https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/solr-delete-index/"/>
+    <id>https://www.crazy-coder.cn/2016/03/18/zhong-jian-jian/solr-delete-index/</id>
+    <published>2016-03-18T00:00:00.000Z</published>
+    <updated>2019-05-29T11:29:26.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;有时候需要删除 Solr 中的数据（特别是不重做索引的系统中，在重做索引期间）。删除一些 Solr无效数据（或不合格数据）。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="中间件" scheme="https://www.crazy-coder.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+      <category term="Solr" scheme="https://www.crazy-coder.cn/tags/Solr/"/>
+    
+  </entry>
+  
+</feed>
